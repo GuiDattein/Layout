@@ -1,111 +1,94 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  min-height: 100vh;
-
-  background: linear-gradient(
-    -180deg,
-    rgba(227, 255, 248, 0) 82.08%,
-    rgba(227, 255, 248, 0.38) 100%
-  );
+:root {
+  --bg-color: #2f2e41;
+  --span-color: #00bfa6;
+  --text-color: #c2c2c2;
 }
 
+body {
+  background-color: var(--bg-color);
+
+  color: white;
+}
+
+nav,
+h1,
+footer {
+  font-family: 'JetBrains Mono', monospace;
+}
+span {
+  color: #00bfa6;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
 .page {
-  max-width: 1000px;
+  max-width: 1083px;
+
   margin: 0 auto;
-  padding-top: 65px;
+  padding-top: 71px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-bottom: 55px;
+  margin-bottom: 101px;
 }
 ul {
   display: flex;
-  gap: 48px;
+  gap: 64px;
   list-style: none;
-
-  font-family: 'Mulish', sans-serif;
 }
-ul li a {
-  color: #1f1534;
-  text-decoration: none;
-  opacity: 0.8;
-}
-ul li a:hover {
-  font-weight: bold;
-  opacity: 1;
+ul a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
+  margin-bottom: 157px;
+}
+main .text {
+  text-align: center;
+}
 main h1 {
-  font-size: 49px;
-  line-height: 56px;
-  color: #1f1534;
-
-  font-weight: normal;
-
-  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
 }
-h1 span {
-  color: #89c5cc;
-}
-section p {
-  font-size: 14px;
-  line-height: 28px;
-  color: #7d7987;
-  margin: 40px 0;
-}
-button {
-  color: white;
+main p {
   font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
 
-  background-color: #69b99d;
-  border: none;
-  padding: 14px 32px 15px;
-  border-radius: 5px;
+  color: var(--text-color);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  cursor: pointer;
-}
-button:hover {
-  background-color: #5d927f;
+  margin-top: 59px;
 }
 
 footer {
-  font-size: 14px;
-  line-height: 28px;
-
   text-align: center;
 
-  margin-top: 80px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
 }
-footer a {
-  font-weight: bold;
-  color: #1f1534;
-  text-decoration: none;
-}
-
-#balls {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+footer .line {
+  margin: 0 auto 27px;
+  width: 568px;
+  height: 0;
+  border: 1px solid var(--span-color);
 }
