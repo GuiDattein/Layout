@@ -1,4 +1,4 @@
-# Explorer_proj.2 </br> 
+# Layouts e posicionamentos #2 </br> 
 Porjeto 2 feito no curso Explorer da RocketSeat
 ##
 
